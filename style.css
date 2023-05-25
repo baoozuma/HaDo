@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+
+}
+body {
+  overflow-x: hidden;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+.head {
+  background: linear-gradient(rgba(197, 195, 195, 0.41), rgba(0, 0, 0, 0.558)),url("./assets/headbg.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100vw;
+  
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+nav {
+  height: 2vw;
+  background-color: #272f3d5e;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 10vw;
+  padding: 1.8vw;
+}
+nav a {
+  font-size: 1.8vw;
+  font-weight: 300;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+nav a:hover {
+  color: black;
+}
+
+.text_container {
+  height: 43.1vw;
+
+  color: white;
+  grid-area: text_container;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  
+
+}
+.text_container .title {
+  
+  letter-spacing: 1vw;
+  font-size: 7vw;
+  font-weight: 200;
+}
+.text_container .subtitle {
+  font-size: 3vw;
+  font-weight: 300;
+
+  
+}
+.text_container .author {
+  font-weight: 300;
+  font-size: 3vw;
+
+}
+.text_container button {
+  width: 14vw;
+  height: 4vw;
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 0 auto;
+  transition: all 0.3s;
+  font-size: 1.5vw;
+}
+.text_container button:hover {
+  background-color: rgb(167, 167, 167);
+  color: black;
+  
+}
+.text_container button:active {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  
+}
+.text_container blockquote {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  margin-bottom: 2vw;
+}
+.story {
+  margin: 0;
+}
+
+.information {
+  color: white;
+  background-color: rgb(38, 36, 36);
+  margin: 0;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.information h1 {
+  font-size: 2vw;
+  font-weight: 300;
+}
+.information p {
+  font-size: 1.2vw;
+}
+.image_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.image_container section {
+  color: white;
+  width: 50%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.image_container section h1 {
+  font-weight: 300;
+  font-size: 2.5vw;
+}
+.image_container section p {
+  font-size: 1.5vw;
+}
+.image_container section:nth-child(1) {
+  background-image: url("./assets/stories/story1.jpg");
+}
+.image_container section:nth-child(2) {
+  background-image: url("./assets/stories/story2.jpg");
+}
+.image_container section:nth-child(3) {
+  background-image: url("./assets/stories/story3.jpg");
+}
+.image_container section:nth-child(4) {
+  background-image: url("./assets/stories/story4.jpg");
+}
+.intro_character {
+  
+  color: white;
+  display: flex;
+  gap: 0;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.intro_character section {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 21%;
+  height: 30vw;
+  padding: 2%;
+  gap: 2vw;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.intro_character section h1 {
+  font-weight: 300;
+  font-size: 2vw;
+}
+.intro_character section p {
+  font-size: 1.2vw;
+}
+@media screen and (max-width: 960px) {
+  .intro_character section {
+    width: 29.3333333333%;
+  }
+  .intro_character section h1 {
+    font-size: 2.5vw;
+  }
+  .intro_character section p {
+    font-size: 1.5vw;
+  }
+}
