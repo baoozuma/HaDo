@@ -4,30 +4,33 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
 
-    <section class="head">
+    <section class="head" >
       <nav>
-        <a href="">FILM</a>
-        <a href="">TRAILER</a>
-        <a href="">DONATE</a>
-        <a href="">CREDIT</a>
+        <a onclick="scrollToElement('#tabs')">FILM</a>
+        <a onclick="scrollToElement('#trailer')">TRAILER</a>
+        <a id="scrollToTab2">POSTERS</a>
+        <a id="scrollToTab3">CREDIT</a>
       </nav>
       <div class="whitespace"></div>
-      <div class="text_container">
+      <div class="text_container rellax">
         <blockquote>
           <h3 class="author">DỰ ÁN PHIM PHÓNG TÁC</h3>
           <h1 class="title">HẠ ĐỎ</h1>
           <h3 class="subtitle">COMING SOON</h3>
         </blockquote>
 
-        <button onclick="scrollToElement()">LEARN MORE</button>
+        <button onclick="scrollToElement('#character')">LEARN MORE</button>
       </div>
     </section>
     <div class="story">
@@ -59,37 +62,118 @@
         <h1>THE CHARACTERS</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum arcu at elit efficitur convallis.</p>
       </div>
-      <div class="intro_character">
-        <section class="lazy-load-bg" data-src="./assets/character/jungkook.jpeg">
-          <h1>Jeon Jungkook - 25</h1>
-          <p>Jungkook is a hardworking, ambitious, and playful individual with a competitive spirit. He is determined, introverted</p>
-        </section>
-        <section class="lazy-load-bg" data-src="./assets/character/v.jpeg">
-          <h1>Kim Teahyung - 27</h1>
-          <p>He is outgoing, artistic, and has a playful nature. Taehyung is empathetic, confident, and embraces his individuality.</p>
-        </section>
-        <section class="lazy-load-bg" data-src="./assets/character/jimin.jpeg">
-          <h1>Park Jimin - 27</h1>
-          <p> He brings joy to others with his cheerful personality and is admired for his exceptional dance skills and stage presence.</p>
-        </section>
-        <section class="lazy-load-bg" data-src="./assets/character/rm.jpeg">
-          <h1>Kim Namjoon - 28</h1>
-          <p>He is known for his intelligent and thoughtful nature. RM possesses strong leadership skills and is the spokesperson for the group.</p>
-        </section>
-        <section class="lazy-load-bg" data-src="./assets/character/hope.jpeg">
-          <h1>Jung Ho-seok - 29</h1>
-          <p>Jungkook is a hardworking, ambitious, and playful individual with a competitive spirit. He is determined, introverted, and valued for his loyalty.</p>
-        </section>
-        <section class="lazy-load-bg" data-src="./assets/character/suga.jpeg" >
-          <h1>Min Yoongi - 30</h1>
-          <p>Jungkook is a hardworking, ambitious, and playful individual with a competitive spirit. He is determined, introverted, and valued for his loyalty.</p>
-        </section>
-        <section class="lazy-load-bg" data-src="./assets/character/jin.jpeg"> 
-          <h1>Kim Seok-jin - 30</h1>
-          <p>Jungkook is a hardworking, ambitious, and playful individual with a competitive spirit. He is determined, introverted, and valued for his loyalty.</p>
-        </section>
+      <div class="intro_character" ></div>
+    </div>
+    <div class="trailer" id="trailer">
+      <div class="information">
+        <h1>THE TRAILER</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum arcu at elit efficitur convallis.</p>
+      </div>
+      <div id='videoContainer'>
+
+      </div>
+    <div class="poster">
+      <div class="information">
+        <h1>SOCIAL MEDIA</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus rutrum arcu at elit efficitur convallis.</p>
+      </div>
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">SOURCE</a></li>
+          <li><a href="#tabs-2">POSTER</a></li>
+          <li><a href="#tabs-3">CREDIT</a></li>
+        </ul>
+        <div id="tabs-1">
+         
+          <div class="frame">
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.</p>
+            <iframe src="https://www.youtube.com/embed/7xu9ES6Vmz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.</p>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FMultimediaClubNDC%2Fvideos%2F529428915926319%2F&show_text=false&width=560&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+          </div>   
+        </div>
+        <div id="tabs-2">
+          <div id="posterContainer" class="posterContainer">
+          </div>       
+        </div>
+        <div id="tabs-3">
+          <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+          <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+        </div>
       </div>
     </div>
+    
+
+
+    <script src="poster.js"></script>
+    <script src="trailer.js"></script>
+    <script src="character.js"></script>
     <script src="main.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $("#tabs").tabs({
+          show: { effect: "fade", duration: 200 },   // Hiệu ứng chuyển tab: fade và thời gian 300ms
+          hide: { effect: "fade", duration: 200 }    // Hiệu ứng ẩn tab: fade và thời gian 300ms
+        });
+      });
+      
+      </script>
+      <script>
+        $(document).ready(function() {
+          // Khi click vào phần tử bên ngoài
+          $('#scrollToTab3').click(function() {
+            // Cuộn xuống tabs
+            $('html, body').animate({
+              scrollTop: $('#tabs').offset().top
+            }, 2000); // Thời gian cuộn (ms)
+        
+            // Hiển thị tab 3
+            $('#tabs').tabs('option', 'active', 2);
+        
+            return false; // Ngăn chặn hành vi mặc định của phần tử
+          });
+        });
+        
+      </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.intro_character').slick({
+          infinite: false,
+          slidesToShow: 4,
+          swipeToSlide: true,
+          arrows: false
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        // Khi click vào phần tử bên ngoài
+        $('#scrollToTab2').click(function() {
+          // Cuộn xuống tabs
+          $('html, body').animate({
+            scrollTop: $('#tabs').offset().top
+          }, 2000); // Thời gian cuộn (ms)
+      
+          // Hiển thị tab 2
+          $('#tabs').tabs('option', 'active', 1);
+      
+          return false; // Ngăn chặn hành vi mặc định của phần tử
+        });
+      });
+      
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    
+    <script>
+      // Accepts any class name
+      var rellax = new Rellax('.rellax');
+    </script>
+
   </body>
 </html>

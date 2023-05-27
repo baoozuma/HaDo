@@ -3,22 +3,19 @@
   font-family: "Montserrat";
   margin: 0;
   padding: 0;
+  color: white;
+
+}
+body,html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
 
 }
 body {
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
-}
-html {
-  scroll-behavior: smooth;
-  width: 100%;
-  height: 100%;
-  margin: 0px;
-  padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden !important; 
+  background-color: rgb(75, 75, 75);
 }
 .head {
   background: linear-gradient(rgba(197, 195, 195, 0.41), rgba(0, 0, 0, 0.558)),url("./assets/headbg.jpg");
@@ -32,18 +29,18 @@ html {
   flex-direction: column;
 }
 nav {
-  height: 2vw;
+  height: 3vw;
   background-color: #272f3d5e;
-  width: 100vw;
-
+  width: 98vw;
+  align-items: center;
   display: flex;
   justify-content: center;
   margin: 0 auto;
   gap: 10vw;
-  padding: 1.8vw;
+  padding: 1vw;
 }
 nav a {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: 300;
   text-decoration: none;
   color: white;
@@ -169,21 +166,24 @@ nav a:hover {
   display: flex;
   gap: 0;
   width: 100%;
+  height: 35vw;
   flex-wrap: wrap;
   justify-content: center;
 
 }
 .intro_character section {
-  display: flex;
+
+  display: flex !important;
   flex-direction: column;
   justify-content: end;
-  width: 21%;
-  height: 30vw;
-  padding: 2%;
-  gap: 2vw;
+  width: 25vw;
+  height: 35vw;
+  transition: all 0.3s;
+  gap: 0vw;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;
+  line-height: 1.5;
 }
 .intro_character section h1 {
   font-weight: 300;
@@ -191,13 +191,133 @@ nav a:hover {
 }
 .intro_character section p {
   font-size: 1.2vw;
+  font-weight: 300;
+
+}
+
+.intro_character blockquote {
+  padding: 1vw;
+}
+.intro_character img {
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.intro_character section:nth-child(odd) blockquote{
+  background-color: rgb(43, 43, 45) !important;
+}
+.intro_character section:nth-child(even)  blockquote{
+  background-color: rgb(77, 77, 82) !important;
+}
+#videoContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#videoContainer video {
+  width: 33.33%;
+}
+#tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 2vw;
+  border: none;
+  background-color: transparent !important;
+  font-size: 1.5vw; 
+}
+#tabs ul {
+  display: flex;
+  margin: 0 auto;
+  gap: 1vw;
+  border: none;
+  background-color: transparent !important;
+  gap: 2vw;
+}
+#tabs li {
+  display: flex;
+  justify-content: center;
+  margin:0 1vw;
+  width: 12vw;
+}
+#tabs li a {
+  font-size: 1.5vw;
+  text-align: center;
+}
+#tabs-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2vw;
+
+}
+#tabs-1 iframe {
+  margin: 0 auto;
+}
+.frame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+
+  width: 64vw;
+  margin: 2vw auto 0 auto;
+}
+.frame iframe {
+  width: 64vw !important;
+  height: 36vw;
+}
+
+#tabs-2 img {
+  
+  width: 25vw;
+  height: auto;
+}
+#tabs-2 {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 50vw;
+}
+#posterContainer {
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 2vw;
+  display: flex;
+  justify-content: center;
+
+}
+#posterContainer a {
+  color: white;
+  background-color: rgb(58, 58, 56);
+  text-decoration: none !important;
+  padding: 1vw;
+  margin-top: 2vw;
+  
+}
+.posterItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  margin-top: 2vw;
+}
+.posterVersion {
+  font-size: 1.8vw;
 }
 @media screen and (max-width: 960px) {
+  .intro_character {
+    height: 40vw;
+  }
   .intro_character section {
     width: 29.3333333333%;
+    height: 40vw;
   }
   .intro_character section h1 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .intro_character section p {
     font-size: 1.5vw;

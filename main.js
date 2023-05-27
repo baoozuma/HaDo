@@ -1,9 +1,12 @@
-function scrollToElement() {
-  var target = $('#character');
+function scrollToElement(classtype) {
+  var target = $(classtype);
   $('html, body').animate({
     scrollTop: target.offset().top
   }, 2000); // Thời gian cuộn (ms)
 }
+$( function() {
+  $( "#tabs" ).tabs();
+} );
 
 // Tạo một mảng chứa tất cả các phần tử cần lazy load background
 const lazyLoadElements = document.querySelectorAll('.lazy-load-bg');
@@ -40,3 +43,5 @@ window.addEventListener('resize', lazyLoadBackground);
 
 // Gọi hàm lazyLoadBackground lần đầu để kiểm tra các phần tử hiển thị ban đầu
 lazyLoadBackground();
+var images = document.querySelectorAll('img');
+new simpleParallax(images);
