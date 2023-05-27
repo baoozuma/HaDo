@@ -80,7 +80,7 @@ nav a:hover {
 
 }
 .text_container button {
-  width: 14vw;
+  width: 17vw;
   height: 4vw;
   background-color: black;
   color: white;
@@ -183,7 +183,7 @@ nav a:hover {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center center;
-  line-height: 1.5;
+  
 }
 .intro_character section h1 {
   font-weight: 300;
@@ -191,12 +191,16 @@ nav a:hover {
 }
 .intro_character section p {
   font-size: 1.2vw;
+  line-height: 2vw;
   font-weight: 300;
 
 }
 
 .intro_character blockquote {
   padding: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
 }
 .intro_character img {
   height: 100%;
@@ -223,7 +227,7 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 90vw;
+  width: 96vw;
   margin: 0 auto;
   padding: 2vw;
   border: none;
@@ -239,6 +243,8 @@ nav a:hover {
   gap: 2vw;
 }
 #tabs li {
+  border: none;
+  border-radius: none;
   display: flex;
   justify-content: center;
   margin:0 1vw;
@@ -268,8 +274,9 @@ nav a:hover {
   margin: 2vw auto 0 auto;
 }
 .frame iframe {
-  width: 64vw !important;
+  width: 64vw ;
   height: 36vw;
+  font-size: 1vw;
 }
 
 #tabs-2 img {
@@ -321,5 +328,12 @@ nav a:hover {
   }
   .intro_character section p {
     font-size: 1.5vw;
+  }
+  .frame {
+    width: 80vw;
+  }
+  .frame iframe{
+    width: 80vw !important;
+    height: 45vw;
   }
 }
