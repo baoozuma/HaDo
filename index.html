@@ -20,7 +20,7 @@
         <a onclick="scrollToElement('#tabs')">FILM</a>
         <a onclick="scrollToElement('#trailer')">TRAILER</a>
         <a id="scrollToTab2">POSTERS</a>
-        <a id="scrollToTab3">CREDIT</a>
+        <a id="scrollToTab4">CREDIT</a>
       </nav>
       <div class="whitespace"></div>
       <div class="text_container rellax">
@@ -81,15 +81,14 @@
         <ul>
           <li><a href="#tabs-1">SOURCE</a></li>
           <li><a href="#tabs-2">POSTER</a></li>
-          <li><a href="#tabs-3">CREDIT</a></li>
+          <li><a href="#tabs-3">PLAYLIST</a></li>
+          <li><a href="#tabs-4">CREDIT</a></li>
         </ul>
         <div id="tabs-1">
          
           <div class="frame">
             <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.</p>
             <iframe src="https://www.youtube.com/embed/7xu9ES6Vmz8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.</p>
-            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FMultimediaClubNDC%2Fvideos%2F529428915926319%2F&show_text=false&width=560&t=0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
           </div>   
         </div>
         <div id="tabs-2">
@@ -97,6 +96,9 @@
           </div>       
         </div>
         <div id="tabs-3">
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/73GGBByAR9IBZOTCB1ag7O?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div id="tabs-4">
           <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
           <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
         </div>
@@ -125,14 +127,14 @@
       <script>
         $(document).ready(function() {
           // Khi click vào phần tử bên ngoài
-          $('#scrollToTab3').click(function() {
+          $('#scrollToTab4').click(function() {
             // Cuộn xuống tabs
             $('html, body').animate({
               scrollTop: $('#tabs').offset().top
             }, 2000); // Thời gian cuộn (ms)
         
             // Hiển thị tab 3
-            $('#tabs').tabs('option', 'active', 2);
+            $('#tabs').tabs('option', 'active', 3);
         
             return false; // Ngăn chặn hành vi mặc định của phần tử
           });

@@ -244,16 +244,24 @@ nav a:hover {
 }
 #tabs li {
   border: none;
-  border-radius: none;
+  border-radius: 0 !important;
   display: flex;
   justify-content: center;
   margin:0 1vw;
   width: 12vw;
   font-size: 2vw;
+  align-items: center;
 }
 #tabs li a {
   font-size: 1.5vw;
   text-align: center;
+  transition: all 0.3s;
+}
+#tabs li {
+  transition: all 0.3s;
+}
+#tabs li:hover {
+  background-color: aqua;
 }
 #tabs-1 {
   display: flex;
@@ -316,7 +324,15 @@ nav a:hover {
 .posterVersion {
   font-size: 1.8vw;
 }
+#tabs-3 iframe {
+  margin-top: 5vw;
+  width: 70vw;
+  height: 30vw;
+}
 @media screen and (max-width: 960px) {
+  #tabs {
+    font-size: 2vw;
+  }
   .text_container button {
     width: 22vw;
     height: 5vw;
@@ -343,7 +359,15 @@ nav a:hover {
     height: 45vw;
   }
   #tabs li {
-    width: 12vw;
+    width: 16vw;
+    height: 6vw;
     font-size: 2vw !important;
+  }
+  #tabs li a {
+    font-size: 2.1vw;
+  }
+  #tabs-3 iframe {
+    width: 70vw;
+    height: 80vw;
   }
 }
