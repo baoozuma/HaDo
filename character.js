@@ -1,15 +1,15 @@
 const characters = [
     {
-      name: 'Jeon Jungkook',
-      age: 25,
-      image: './assets/character/jungkook.jpeg',
-      description: 'Jungkook is a hardworking, ambitious, and playful individual with a competitive spirit. He is determined and introverted.',
+      name: 'Nguyễn Minh Đức',
+      age: 16,
+      image: './assets/character/duc.jpg',
+      description: 'Dáng vừa không cao không thấp, tính ngay thẳng, ngông ở mức độ vẫn còn hiểu chuyện. Sống trên thành phố từ khi còn nhỏ và không thoải mái khi về tới quê nội. Ba mẹ đưa ĐỨC về quê và sống nhờ nhà cô Ba. ',
     },
     {
-      name: 'Kim Teahyung',
-      age: 27,
-      image: './assets/character/v.jpeg',
-      description: 'V is outgoing, artistic, and has a playful nature. Taehyung is empathetic, confident, and often praised for his distinctive fashion.',
+      name: 'Hà Ánh Mai',
+      age: 15,
+      image: './assets/character/nho.jpg',
+      description: 'Dáng cao, hiểu chuyện, hiếu thảo. Không chơi chung được với người trong xóm và sống trong lời chế giễu bàn tán của mọi người. Ở chung với nhà dì Tư, Mai chưa từng thấy dễ thở trong cuộc sống như thế.',
     },
     {
       name: 'Park Jimin',
